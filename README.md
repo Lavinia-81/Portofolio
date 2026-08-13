@@ -1,11 +1,11 @@
-# 🌟 Maria Lavinia Dusca — Portofolio
+# Maria Lavinia Dusca — Portofolio
 
 A modern, responsive, and fully handcrafted digital Portofolio showcasing my work as a Full‑Stack Developer and Digital Creator.  
 This project blends clean UI, structured content, and purposeful design to present my technical journey, published products, and professional growth.
 
 ---
 
-## 💼 About Me
+## About Me
 
 I am a Junior Full‑Stack Developer with three years of structured, instructor‑led technical training combined with extensive independent study and hands‑on project development.  
 My experience spans front‑end and back‑end development, REST APIs, Linux, Docker, DevOps fundamentals, and basic cybersecurity.
@@ -21,7 +21,7 @@ I value clarity, accessibility, and thoughtful design — principles reflected a
 
 ---
 
-## 🛠️ Technologies & Skills
+## Technologies & Skills
 
 ### **Front‑End**
 - HTML5, CSS3, JavaScript, React  
@@ -56,13 +56,6 @@ I value clarity, accessibility, and thoughtful design — principles reflected a
 
 Available on:  
 **Etsy** · **Gumroad**
-
----
-
-## Explore My Work
-
-- **GitHub:** https://github.com/Lavinia-81  
-- **Netlify Portfolio:** https://maria-portfolio.netlify.app
 
 ---
 
