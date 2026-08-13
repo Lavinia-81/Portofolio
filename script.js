@@ -47,6 +47,7 @@ window.addEventListener('scroll', () => {
 /* ===========================
    SCROLL REVEAL ANIMATIONS
 =========================== */
+
 const sr = ScrollReveal({
   distance: '60px',
   duration: 1200,
@@ -79,31 +80,22 @@ sr.reveal('.contact form', { origin: 'bottom' });
    EMAILJS CONTACT FORM
 =========================== */
 
-document.getElementById("contact-form").addEventListener("submit", async function (e) {
+document.getElementById("contact-form").addEventListener("submit", async function(e) {
   e.preventDefault();
 
-  const formData = new FormData(this);
-  const data = Object.fromEntries(formData);
+  const data = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value
+  };
 
-  // Honeypot anti-bot (camp ascuns)
-  if (data.website) {
-    return; 
-  }
-
-  // Sanitizare minimă în front-end
-  if (data.message) {
-    data.message = data.message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-  }
-
-  const response = await fetch("/.netlify/functions/contact", {
+  const response = await fetch("/api/contact", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
   });
 
-  const result = await response.json();
-
-  if (result.success) {
+  if (response.ok) {
     alert("Message sent successfully!");
     this.reset();
   } else {
