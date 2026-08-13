@@ -1,4 +1,3 @@
-// api/contact.js
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
@@ -6,8 +5,8 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-   let rawBody = "";
-
+  // Read raw body from Vercel request
+  let rawBody = "";
   await new Promise((resolve) => {
     req.on("data", (chunk) => {
       rawBody += chunk;
