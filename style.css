@@ -481,6 +481,34 @@ textarea {
   resize: none;
 }
 
+/* popup elegant */
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #222;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+.popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.popup.success {
+  background: #2ecc71;
+}
+
+.popup.error {
+  background: #e74c3c;
+}
+
 /* ===========================
    FOOTER
 =========================== */

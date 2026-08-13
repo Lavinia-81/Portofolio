@@ -80,29 +80,48 @@ sr.reveal('.contact form', { origin: 'bottom' });
    EMAILJS CONTACT FORM
 =========================== */
 
-document.getElementById("contact-form").addEventListener("submit", async function(e) {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
 
-  const data = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value
-  };
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-  const response = await fetch("/api/contact", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data)
+    const data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        showPopup("Message sent successfully!", "success");
+        form.reset();
+      } else {
+        showPopup("Message failed to send.", "error");
+      }
+    } catch (err) {
+      showPopup("Server error. Please try again later.", "error");
+    }
   });
-
-  if (response.ok) {
-    alert("Message sent successfully!");
-    this.reset();
-  } else {
-    alert("Message failed to send.");
-  }
 });
 
+
+// popup elegant
+function showPopup(message, type) {
+  const popup = document.getElementById("popup");
+  popup.textContent = message;
+  popup.className = `popup show ${type}`;
+
+  setTimeout(() => {
+    popup.className = "popup hidden";
+  }, 3000);
+}
 
 /* ===========================
    FOOTER YEAR AUTO-UPDATE

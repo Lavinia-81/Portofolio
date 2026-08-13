@@ -3,17 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Scripts -->
-  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
   <title>Maria Lavinia Dusca | Full-Stack Developer & API Architect</title>
 </head>
 
@@ -230,21 +221,22 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
+    <div id="popup" class="popup hidden"></div>
 
     <form action="#" id="contact-form">
       <div class="input-box">
-        <input type="text" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]{2,40}" required/>
-        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" id="name" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]{2,40}" />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
       </div>
 
       <div class="input-box">
-        <input type="text" name="phone" placeholder="Phone Number" pattern="[0-9\s+]{7,15}"/>
-        <input type="text" name="subject" placeholder="Subject" required pattern="[A-Za-z\s]{2,100}" required/>
-        <input type="text" name="website" style="display:none">
-
+        <input type="text" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9\s+]{7,15}" />
+        <input type="text" id="subject" name="subject" placeholder="Subject" required pattern="[A-Za-z\s]{2,100}" />
+        <input type="text" id="website" name="website" style="display:none">
       </div>
 
-      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required maxlength="100"></textarea>
+      <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required maxlength="100"></textarea>
+
       <input type="submit" value="Send Message" class="btn">
     </form>
   </section>
@@ -263,6 +255,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
