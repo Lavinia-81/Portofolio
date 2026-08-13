@@ -1,0 +1,182 @@
+/* ===========================
+   GLOBAL
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #3c4047;
+  color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cv-container {
+  max-width:850px;
+  width: 100%;
+  background: #212327; /* second-bg-color */
+  padding: 4rem;
+  border-radius: 1.6rem;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.4);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: .4rem 0;
+}
+
+header a {
+  color: rgb(255, 0, 187); /* main-color */
+  font-weight: 500;
+}
+
+/* ===========================
+   SECTION HEADINGS
+=========================== */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(255, 0, 187);
+  border-left: 4px solid rgb(255, 0, 187);
+  padding-left: 1rem;
+}
+
+/* ===========================
+   SUMMARY
+=========================== */
+.summary p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+/* ===========================
+   EDUCATION
+=========================== */
+.education ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.education li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #3c4047;
+  border-radius: .8rem;
+  border-left: 4px solid rgb(255, 0, 187);
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+.skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.skills li {
+  background: #3c4047;
+  padding: 1.2rem;
+  border-radius: .8rem;
+  font-size: 1rem;
+  border-left: 4px solid rgb(255, 0, 187);
+}
+
+/* ===========================
+   PUBLISHED PROJECTS
+=========================== */
+.published ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.published li {
+  background: #3c4047;
+  padding: 1.5rem;
+  border-radius: .8rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid rgb(255, 0, 187);
+}
+
+.published a {
+  color: rgb(255, 0, 187);
+  font-weight: 600;
+}
+
+.published p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.footer a {
+  color: rgb(255, 0, 187);
+  font-weight: 600;
+}
+
+.footer-text {
+  margin-top: 1rem;
+}
+
+.footer-text p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 600px) {
+  .cv-container {
+    padding: 2rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  section h2 {
+    font-size: 2.4rem;
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr;
+  }
+}

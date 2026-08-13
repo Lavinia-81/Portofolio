@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <title>Maria Lavinia Dusca | Full-Stack Developer & API Architect</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="img/brand_icon.png" alt="portfolio logo">
+    </a>
+
+    <a href="#" class="logo">
+      <h2><span>Maria Lavinia Dusca</span></h2>
+    </a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="home" id="home">
+    <div class="home-content">
+
+      <h1 class="hero-title"><span>Junior</span> Full-Stack / Software <span>Developer</span></h1>
+
+      <p class="hero-description">
+        I build complete systems — elegant interfaces, reliable backends, secure deployments, and scalable automation.
+        My work blends engineering clarity with editorial-grade design, delivering digital experiences that feel inevitable.
+      </p>
+
+      <div class="social-media">
+        <a href="https://github.com/Lavinia-81"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/maria-lavinia-dusca-a4300329a"><i class='bx bxl-linkedin'></i></a>
+      </div>
+
+      <a href="CVindex.html" class="btn btn-primary">Preview CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="img/me.jpg" alt="profile-face">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="img/me.jpg" alt="profile-face">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+
+      <p>
+        I am a Junior full-stack developer with experience across front-end engineering, backend development,
+        DevOps, cloud deployments, Python automation, and security. I've built real products —
+        commercial apps on Etsy, a document compressor published on Google, a public API for poetry and prose,
+        and a technical book on API architecture.
+      </p>
+
+      <p>
+        My approach combines clarity, structure, and long‑term maintainability. I design systems that scale,
+        interfaces that communicate trust, and backends that remain stable under load. I work with React,
+        Node.js, Python, FastAPI, Docker, CI/CD, cloud workflows, and modern security principles.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <h2 class="heading"><span>Skills</span></h2>
+
+    <div class="skills-container">
+
+      <div class="skills-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Front-End Engineering</h3>
+        <p>React, component architecture, state management, responsive systems, accessibility, design systems.</p>
+      </div>
+
+      <div class="skills-box">
+        <i class='bx bx-server'></i>
+        <h3>Backend Development</h3>
+        <p>Node.js, Express, Fastify, Python, FastAPI, REST APIs, authentication, caching, database design.</p>
+      </div>
+
+      <div class="skills-box">
+        <i class='bx bx-cloud'></i>
+        <h3>DevOps & Cloud</h3>
+        <p>Docker, CI/CD pipelines, Google Cloud deployments, monitoring, logging, automation workflows.</p>
+      </div>
+
+      <div class="skills-box">
+        <i class='bx bx-shield'></i>
+        <h3>Security</h3>
+        <p>OWASP, API security, JWT, hashing, encryption, secure deployments, rate limiting.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="projects-container">
+
+      <!-- Poezii API -->
+      <div class="portfolio-box">
+        <img src="img/cultural_api.png" alt="Cultural API">
+        <div class="portfolio-layer">
+          <h4>Cultural API</h4>
+          <p>Cultural API is a curated digital archive dedicated to classical Romanian literature. It provides structured access to works across multiple literary genres—such as poetry and prose.</p>
+          <a href="https://culturalapi.onrender.com/"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <!-- Document Compressor -->
+      <div class="portfolio-box">
+        <img src="img/compressor.png" alt="Document Compressor">
+        <div class="portfolio-layer">
+          <h4>Document Compressor</h4>
+          <p>File Compressor Pro is a free tool designed to help users compress PDF files efficiently and securely.</p>
+          <a href="https://compresspro.netlify.app/"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <!-- Interactive Weekly Calendar -->
+      <div class="portfolio-box">
+        <img src="img/calendar.png" alt="calendar">
+        <div class="portfolio-layer">
+          <h4>Interactive Weekly Calendar</h4>
+          <p>Interactive calendar blends minimalist design with responsive functionality.</p>
+          <a href="https://www.etsy.com/uk/listing/4359609808/interactive-weekly-calendar-digital"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <!-- AWS Calendar -->
+      <div class="portfolio-box">
+        <img src="img/aws-calendar.png" alt="AWS Calendar">
+        <div class="portfolio-layer">
+          <h4>AWS Motivation Calendar</h4>
+          <p>A motivational AWS study calendar with daily goals, quizzes, multilingual support, and instant browser access.</p>
+          <a href="https://www.etsy.com/uk/listing/4354411502/aws-exam-prep-planner-3-weeks-of-goals"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <!-- Smart Menu -->
+      <div class="portfolio-box">
+        <img src="img/smart-menu.png" alt="Smart Menu Planner">
+        <div class="portfolio-layer">
+          <h4>Smart Menu Planner</h4>
+          <p>Responsive meal-planning tool with auto-save and print-ready exports.</p>
+          <a href="https://www.etsy.com/uk/listing/4368788117/smart-menu-planner"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <!-- Analog-Digital Clock -->
+      <div class="portfolio-box">
+        <img src="img/analog-clock.png" alt="analog-digital clock UI">
+        <div class="portfolio-layer">
+          <h4>Analog-Digital Clock UI</h4>
+          <p>Digital Clock interface designed for modern screens and creative minds with elegant UI.</p>
+          <a href="https://www.etsy.com/uk/listing/4358190945/responsive-analog-digital-clock-ui"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <h2 class="heading">My <span>Process</span></h2>
+
+    <div class="process-container">
+      <div class="process-step">
+        <h3>1. Requirements</h3>
+        <p>Understanding goals, constraints, and user expectations.</p>
+      </div>
+
+      <div class="process-step">
+        <h3>2. Architecture</h3>
+        <p>Designing scalable systems, choosing the right technologies.</p>
+      </div>
+
+      <div class="process-step">
+        <h3>3. UI/UX</h3>
+        <p>Building interfaces that communicate clarity and trust.</p>
+      </div>
+
+      <div class="process-step">
+        <h3>4. Backend</h3>
+        <p>Developing secure, reliable, and efficient server-side logic.</p>
+      </div>
+
+      <div class="process-step">
+        <h3>5. DevOps</h3>
+        <p>Automating deployments, monitoring, logging, and scaling.</p>
+      </div>
+
+      <div class="process-step">
+        <h3>6. Security</h3>
+        <p>Applying best practices to protect data and infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="#" id="contact-form">
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]{2,40}" required/>
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+
+      <div class="input-box">
+        <input type="text" name="phone" placeholder="Phone Number" pattern="[0-9\s+]{7,15}"/>
+        <input type="text" name="subject" placeholder="Subject" required pattern="[A-Za-z\s]{2,100}" required/>
+        <input type="text" name="website" style="display:none">
+
+      </div>
+
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required maxlength="100"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#" class="logo"><img src="img/brand_icon.png" alt="portfolio logo"></a>
+
+    <div class="footer-text">
+      <p id="copyright-text"></p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
