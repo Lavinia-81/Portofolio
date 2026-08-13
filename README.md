@@ -7,7 +7,7 @@ This project blends clean UI, structured content, and purposeful design to prese
 
 ## 💼 About Me
 
-I am a Full‑Stack Developer with three years of structured, instructor‑led technical training combined with extensive independent study and hands‑on project development.  
+I am a Junior Full‑Stack Developer with three years of structured, instructor‑led technical training combined with extensive independent study and hands‑on project development.  
 My experience spans front‑end and back‑end development, REST APIs, Linux, Docker, DevOps fundamentals, and basic cybersecurity.
 
 I focus on building practical software products and understanding how different parts of a system work together. My work includes:
@@ -69,7 +69,7 @@ Available on:
 ## Contact
 
 For collaboration or opportunities:  
-**duscalavinia@gmail**
+**duscalavinia2@gmail**
 
 ---
 
