@@ -59,11 +59,4 @@ Available on:
 
 ---
 
-## Contact
-
-For collaboration or opportunities:  
-**duscalavinia2@gmail**
-
----
-
 > _“Each project is a step forward — built with clarity, intention, and continuous growth.”_
