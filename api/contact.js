@@ -1,3 +1,4 @@
+// api/contact.js
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
@@ -5,7 +6,16 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { name, email, message } = req.body;
+   let rawBody = "";
+
+  await new Promise((resolve) => {
+    req.on("data", (chunk) => {
+      rawBody += chunk;
+    });
+    req.on("end", resolve);
+  });
+
+  const { name, email, message } = JSON.parse(rawBody);
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
