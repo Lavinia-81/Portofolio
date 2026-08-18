@@ -450,63 +450,89 @@ span {
 /* ===========================
    CONTACT
 =========================== */
-.contact form {
-  max-width: 70rem;
-  margin: 1rem auto 3rem;
+.contact {
+  padding: 6rem 2rem;
+  background: var(--second-bg-color);
   text-align: center;
 }
 
-.input-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.contact .heading {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
 }
 
-.input-box input,
-textarea {
-  width: 100%;
-  padding: 1.5rem;
+.contact-content {
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.contact-intro {
   font-size: 1.6rem;
   color: var(--text-color);
-  background: var(--second-bg-color);
-  border-radius: .8rem;
-  margin: .7rem 0;
+  margin-bottom: 3rem;
+  opacity: 0.9;
 }
 
-.input-box input {
-  width: 49%;
+.contact-details {
+  margin-bottom: 3.5rem;
 }
 
-textarea {
-  resize: none;
+.contact-email {
+  font-size: 1.7rem;
+  color: var(--main-color);
+  font-weight: 600;
 }
 
-/* popup elegant */
-.popup {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #222;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 8px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.4s ease;
-  z-index: 9999;
+.contact-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-.popup.show {
-  opacity: 1;
-  transform: translateY(0);
+.contact-buttons .btn {
+  padding: 1rem 2.4rem;
+  border-radius: 4rem;
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  box-shadow: 0 0 1rem var(--main-color);
+  transition: var(--transition);
+  cursor: pointer;
 }
 
-.popup.success {
-  background: #2ecc71;
+.contact-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 1.5rem var(--main-color);
 }
 
-.popup.error {
-  background: #e74c3c;
+.contact-social {
+  margin-top: 4rem;
+}
+
+.contact-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.contact-social .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-social .social-media a {
+  font-size: 2.6rem;
+  color: var(--main-color);
+  transition: var(--transition);
+}
+
+.contact-social .social-media a:hover {
+  color: var(--text-color);
+  transform: translateY(-4px);
 }
 
 /* ===========================
