@@ -1,3 +1,4 @@
+// api/contact.js
 import nodemailer from "nodemailer";
 
 export const config = {
@@ -8,11 +9,21 @@ export const config = {
 
 
 export default async function handler(req, res) {
+  console.log("API called, method:", req.method);
+  
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
+  console.log("BODY:", req.body);
   const { name, email, message } = req.body;
+
+   console.log("Parsed fields:", { name, email, message });
+
+  console.log("SMTP_HOST:", process.env.SMTP_HOST);
+  console.log("SMTP_USER:", process.env.SMTP_USER);
+  console.log("SMTP_PASS:", process.env.SMTP_PASS ? "OK" : "MISSING");
+  console.log("RECEIVER_EMAIL:", process.env.RECEIVER_EMAIL);
 
   if (!name || !email || !message) {
     return res.status(400).json({ error: "Missing fields" });
@@ -36,10 +47,11 @@ export default async function handler(req, res) {
       subject: `New message from ${name}`,
       text: `Email: ${email}\n\nMessage:\n${message}`
     });
+    console.log("Email sent successfully");
 
     return res.status(200).json({ success: true });
   } catch (err) {
-
+    console.error("Eroare SMTP detaliată:", err);
     return res.status(500).json({ success: false, error: err.message });
   }
 }
