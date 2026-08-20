@@ -255,6 +255,7 @@ span {
 /* ===========================
    SKILLS / SERVICES
 =========================== */
+
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -470,10 +471,14 @@ span {
    CONTACT ME SECTION
 =========================== */
 .contact {
-  background: var(--second-bg-color);
-  padding: 8rem 9% 6rem;
+  background: var(-- bg-color);
+  padding: 7rem 9% 6rem;
   margin-top: 4rem;
   border-radius: var(--radius);
+  /* border: 0.3rem solid var(--main-color); */
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.5),
+  inset 5px 5px 20px rgba(255, 255,255, 0.2),
+  inset -5px -5px 15px rgba(0, 0, 0, 0.75);
 }
 
 .contact .heading {
@@ -482,7 +487,7 @@ span {
 }
 
 .contact-content {
-  max-width: 750px;
+  max-width: 640px;
   margin: 0 auto;
   line-height: 1.7;
 }
@@ -495,7 +500,7 @@ span {
 }
 
 .contact-details {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .contact-email {
