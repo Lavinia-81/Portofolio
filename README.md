@@ -7,7 +7,7 @@ This project blends clean UI, structured content, and purposeful design to prese
 
 ## About Me
 
-I am a Junior Full‑Stack Developer with three years of structured, instructor‑led technical training combined with extensive independent study and hands‑on project development.  
+I am a Full‑Stack Developer with three years of structured, instructor‑led technical training combined with extensive independent study and hands‑on project development.  
 My experience spans front‑end and back‑end development, REST APIs, Linux, Docker, DevOps fundamentals, and basic cybersecurity.
 
 I focus on building practical software products and understanding how different parts of a system work together. My work includes:
@@ -24,7 +24,7 @@ I value clarity, accessibility, and thoughtful design — principles reflected a
 ## Technologies & Skills
 
 ### **Front‑End**
-- HTML5, CSS3, JavaScript, React  
+- HTML5, CSS3, JavaScript, React, TypScript
 - Responsive UI/UX, accessibility, component architecture
 
 ### **Back‑End**
